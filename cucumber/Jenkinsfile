@@ -27,8 +27,6 @@ node() {
 	stage('Import results to Xray') {
 
 		def description = "[BUILD_URL|${env.BUILD_URL}]"
-		def labels = '["regression","automated_regression"]'
-		def environment = "DEV"
 		def testExecutionFieldId = 10009
 		def testEnvironmentFieldName = "customfield_10033"
 		def projectKey = "J2X"
